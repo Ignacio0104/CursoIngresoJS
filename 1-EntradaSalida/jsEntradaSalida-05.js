@@ -5,24 +5,19 @@ function mostrar()
 {
 	var nombre;
 	var edad;
+	var mensajes;
 
 	nombre = document.getElementById("txtIdNombre").value; 
 
 	edad = document.getElementById("txtIdEdad").value;
 
+	mensajes = "Usted se llama ";
+	mensajes = mensajes + nombre;
+	mensajes = mensajes + " y tiene ";
+	mensajes = mensajes + edad;
+	mensajes = mensajes + "años";
 
-	alert("Usted se llama " + nombre + " y tiene " + edad + " años");
+	alert (mensajes); 
 }
 
-/* Entregado 
-
-Se recomienda tambien hacerlo de la siguiente manera, para mejorar la edición en caso de corrección:
-
-
-mensajes = "Usted se llama ";
-mensajes = mensajes + nombre;
-mensajes = mensajes + " y tiene ";
-mensajes = mensajes + edad;
-mensajes = mensajes + "años";
-
-alert (mensajes); */ 
+/* Entregado  */ 

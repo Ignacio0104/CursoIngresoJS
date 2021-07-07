@@ -3,78 +3,66 @@ Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
+
+var numero1;
+var numero2;
+var resultado;
+
 function sumar()
 {	
-	var numero1;
-	var numero2;
-	var suma;
+	
 	var mensaje;
 
 	numero1 = document.getElementById("txtIdNumeroUno").value; 
-
-	numero2 = document.getElementById("txtIdNumeroDos").value;
-
-	suma = parseInt (numero1) + parseInt (numero2);
-
+	numero2 = document.getElementById("txtIdNumeroDos").value; 
+	//Una vez que toman valor no es necesario asignarlo a cada funcion (siempre y cuando arranque con sumar)
+	resultado = parseInt (numero1) + parseInt (numero2);
+	
 	mensaje = "La suma es "
-
-	alert (mensaje + suma);	
+	alert (mensaje + resultado);	
 }
 
 function restar()
 {
-	var numero1;
-	var numero2;
-	var resta;
 	var mensaje;
 
 	numero1 = document.getElementById("txtIdNumeroUno").value; 
-
 	numero2 = document.getElementById("txtIdNumeroDos").value;
-
-	resta = parseInt (numero1) - parseInt (numero2);
+	resultado = parseInt (numero1) - parseInt (numero2);
 
 	mensaje = "La resta es "
 
-	alert (mensaje + resta);	
+	alert (mensaje + resultado);	
 	
 }
 
 function multiplicar()
 { 
-	var numero1;
-	var numero2;
-	var multiplicacion;
+
 	var mensaje;
-
+	
 	numero1 = document.getElementById("txtIdNumeroUno").value; 
-
 	numero2 = document.getElementById("txtIdNumeroDos").value;
-
-	multiplicacion = parseInt (numero1) * parseInt (numero2);
-
+	resultado = parseInt (numero1) * parseInt (numero2);
+	
 	mensaje = "La multiplicacion es "
 
-	alert (mensaje + multiplicacion);	
+	alert (mensaje + resultado);	
 
 }
 
 function dividir()
 {	
-	var numero1;
-	var numero2;
-	var division;
+
 	var mensaje;
 	
 	numero1 = document.getElementById("txtIdNumeroUno").value; 
-
 	numero2 = document.getElementById("txtIdNumeroDos").value;
-
-	division = parseInt (numero1) / parseInt (numero2);
+	resultado = parseInt (numero1) / parseInt (numero2);
 
 	mensaje = "La division es "
 
-	alert (mensaje + division);	
+	alert (mensaje + resultado);	
 	
 }
 
