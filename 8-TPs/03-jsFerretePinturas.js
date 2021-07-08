@@ -10,7 +10,7 @@ function FahrenheitCentigrados ()
     var centigrados;
     var mensaje;
 
-    temperatura=document.getElementById("txtIdTemperatura").value;
+    temperatura= parseInt(document.getElementById("txtIdTemperatura").value);
 
     centigrados = (temperatura - 32) / 1.8;
 
@@ -26,7 +26,7 @@ function CentigradosFahrenheit ()
     var farenheit;
     var mensaje;
 
-    temperatura=document.getElementById("txtIdTemperatura").value;
+    temperatura=parseInt(document.getElementById("txtIdTemperatura").value);
 
     farenheit = (temperatura * 1.8) + 32;
 
@@ -34,3 +34,5 @@ function CentigradosFahrenheit ()
 
     alert (mensaje)
 }
+
+/* Entregado */

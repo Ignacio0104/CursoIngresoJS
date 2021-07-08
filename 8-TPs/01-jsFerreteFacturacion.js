@@ -4,20 +4,21 @@ B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 
+var precio1;
+var precio2;
+var precio3;
 
 function Sumar () 
 {
-	let suma;
-    let mensaje;
-    let precio1;
-    let precio2;
-    let precio3;
+	var suma;
+    var mensaje;
+   
 
-    precio1= parseFloat (document.getElementById("txtIdPrecioUno").value); 
+    precio1= parseFloat(document.getElementById("txtIdPrecioUno").value); 
 
-    precio2= parseFloat (document.getElementById("txtIdPrecioDos").value); 
+    precio2= parseFloat(document.getElementById("txtIdPrecioDos").value); 
 
-    precio3= parseFloat (document.getElementById("txtIdPrecioTres").value); 
+    precio3= parseFloat(document.getElementById("txtIdPrecioTres").value); 
 
     suma = precio1 + precio2  + precio3;
 
@@ -28,12 +29,10 @@ function Sumar ()
 
 function Promedio () 
 {
-    let suma;
-    let promedio;
-    let mensaje;
-    let precio1;
-    let precio2;
-    let precio3;
+    var suma;
+    var promedio;
+    var mensaje;
+   
 
     precio1= parseFloat (document.getElementById("txtIdPrecioUno").value); 
     precio2=parseFloat (document.getElementById("txtIdPrecioDos").value); 
@@ -50,14 +49,10 @@ function Promedio ()
 }
 function PrecioFinal () 
 {
-    let suma;
-    let precioFinal;
-    let mensaje;
-    let precio1;
-    let precio2;
-    let precio3;
-    
-
+    var suma;
+    var precioFinal;
+    var mensaje;
+  
     precio1= parseFloat (document.getElementById("txtIdPrecioUno").value); 
     precio2=parseFloat (document.getElementById("txtIdPrecioDos").value); 
     precio3=parseFloat (document.getElementById("txtIdPrecioTres").value); 
@@ -71,7 +66,9 @@ function PrecioFinal ()
     alert(mensaje + precioFinal.toFixed(2))
 }
 
-/*Comentarios
+/* Entregado
+
+Comentarios
 
 Hay forma de reducir los decimales?
 

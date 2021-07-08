@@ -11,12 +11,12 @@ se necesitan de cada uno para las medidas que nos ingresen.
 
 function Rectangulo () 
 {
-    let perimetro;
-    let mensaje;
-    let mensaje2;
-    let largo;
-    let ancho;
-    let rectanguloAlambre;
+    var perimetro;
+    var mensaje;
+    var mensaje2;
+    var largo;
+    var ancho;
+    var rectanguloAlambre;
     
 
     largo = parseInt(document.getElementById("txtIdLargo").value); 
@@ -35,13 +35,12 @@ function Rectangulo ()
 
 function Circulo () 
 {
-	let perimetro;
-    let radio;
-    let circuloAlambre;
+	var perimetro;
+    var radio;
+    var circuloAlambre;
     const PI = 3.14;
-
-    let mensaje;
-    let mensaje2;
+    var mensaje;
+    var mensaje2;
     
     radio = parseInt(document.getElementById("txtIdRadio").value); 
     
@@ -52,20 +51,20 @@ function Circulo ()
     mensaje = "La cantidad de alambre que se necesita es de ";
     mensaje2 = " metros"
 
-    alert(mensaje + circuloAlambre  + mensaje2);
+    alert(mensaje + circuloAlambre.toFixed(2)  + mensaje2);
 }
 
 
 function Materiales () 
 {
-	let area;
-    let mensaje;
-    let mensaje2;
-    let mensaje3;
-    let largo;
-    let ancho;
-    let cemento;
-    let cal;
+	var area;
+    var mensaje;
+    var mensaje2;
+    var mensaje3;
+    var largo;
+    var ancho;
+    var cemento;
+    var cal;
     
     largo = parseInt(document.getElementById("txtIdLargo").value); 
     ancho = parseInt(document.getElementById("txtIdAncho").value); 
@@ -80,3 +79,5 @@ function Materiales ()
 
     alert(mensaje + cemento + mensaje2 + cal + mensaje3);
 }
+
+/* Entregado */ 
