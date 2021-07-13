@@ -25,7 +25,7 @@ function mostrarAumento()
 	var resultado;
 	var descuento;
 
-	importe = document.getElementById("txtIdImporte").value;
+	importe = document.getElementById("txtIdImporte").value; //Tambien se puede poner importe=txtIdImporte.value;
 	descuento = prompt ("Ingrese el porcentaje de descuento (solo números, sin signos)")
 
 	resultado = parseInt(importe) - (parseInt (importe) * parseInt(descuento)/100);

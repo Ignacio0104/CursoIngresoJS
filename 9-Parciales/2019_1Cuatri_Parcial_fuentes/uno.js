@@ -9,7 +9,7 @@ Enunciado:
 */
 function mostrar()
 {
-    var lado;
+    var lado;   
     var perimetro;
     var mensaje;
 
@@ -19,9 +19,9 @@ function mostrar()
 
     perimetro=lado*3;
 
-    mensaje="El perimetro del triángulo ingresado es ";
+    mensaje="El perímetro del triángulo ingresado es ";
 
-    alert(mensaje + perimetro);
+    alert(mensaje+perimetro);
    
 }
 
