@@ -15,7 +15,52 @@ aumento del 10% y Cordoba tiene el precio sin descuento
 
 function mostrar()
 {
-	var estacionIngresada =txtIdEstacion.value;
-	alert(estacionIngresada);
+	var estacion;
+	var destino;
+	var precio;
+	var mensaje;
+
+	estacion=document.getElementById("txtIdEstacion").value;
+	destino=document.getElementById("txtIdDestino").value;
+	precio=15000;
+	mensaje="El precio final de su viaje es de $"
+
+	switch (estacion){
+		case "Invierno":
+			if (destino==="Bariloche") {
+				precio=precio/0.8;
+				alert(mensaje + precio.toFixed(2));
+			}else if (destino==="Cataratas" || destino==="Cordoba") {
+				precio=precio*0.9;
+				alert(mensaje + precio.toFixed(2))
+			}else{ 
+				precio=precio*0.8;
+				alert(mensaje + precio.toFixed(2));
+			}
+			break;
+		
+		case "Verano":
+			if (destino==="Bariloche") {
+				precio=precio*0.8;
+				alert(mensaje + precio.toFixed(2));
+			}else if (destino==="Cataratas" || destino==="Cordoba") {
+				precio=precio/0.9;
+				alert(mensaje + precio.toFixed(2))
+			}else{ 
+				precio=precio/0.8;
+				alert(mensaje + precio.toFixed(2));
+			}
+			break;
+
+		case "Otoño":
+		case "Primavera":
+			if (destino==="Bariloche"||destino==="Cataratas" || destino==="Mar del plata") {
+				precio=precio/0.9;
+				alert(mensaje + precio.toFixed(2));
+			}else{ 
+				alert(mensaje + precio.toFixed(2));
+			}
+			break;
+	}
 
 }//FIN DE LA FUNCIÓN
