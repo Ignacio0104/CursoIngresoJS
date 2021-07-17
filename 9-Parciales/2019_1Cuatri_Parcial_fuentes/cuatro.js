@@ -35,12 +35,12 @@ function mostrar()
 
     } else 
     {
+        numeroUno=parseInt(numeroUno);
+        numeroDos=parseInt(numeroDos);
+
         if (numeroUno<numeroDos) 
         {
-            var suma;
-
-            suma=parseInt(numeroUno)+ parseInt(numeroDos);
-            alert(suma);
+            alert(numeroUno+numeroDos);
         } else 
         {
             if (numeroUno>numeroDos) 
@@ -49,7 +49,7 @@ function mostrar()
                 {
                     var resta;
 
-                    resta=parseInt(numeroUno)-parseInt(numeroDos);
+                    resta=numeroUno-numeroDos;
                     alert("La resta es " + resta + " y superó el 10");
                 } else
                 {

@@ -71,20 +71,15 @@ function verificar()
 		}
 	} else 
 	{
-		if (intento>numeroSecreto) 
+		if (intento>numeroSecreto || intento<numeroSecreto) 
 		{
-			alert("Te pasaste!");
+			alert("Error");
 		} else
-		{
-			if (intento<numeroSecreto) 
-			{
-				alert("Te falta un poco");
-			} else 
 			{
 				alert("Numero ingresado inválido");
 			}
+		
 		}
-	}
 	
 	document.getElementById("txtIdIntentos").value=contadorIntentos;
 }
