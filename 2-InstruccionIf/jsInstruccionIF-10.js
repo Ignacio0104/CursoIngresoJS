@@ -22,12 +22,15 @@ function mostrar()
 
 	if (numero >= 9) {
 		alert("Tu nota es un " + numero + ". EXCELENTE");
-	} else if (numero > 4 && numero < 9) {
-		alert("Tu nota es un " + numero + ". APROBÓ");
-	} else {
-		alert ("Tu nota es un " + numero + ". Vamos, la próxima se puede");
+	} else 
+	{
+		if (numero > 4 && numero < 9) {
+			alert("Tu nota es un " + numero + ". APROBÓ");
+		} else {
+			alert ("Tu nota es un " + numero + ". Vamos, la próxima se puede");
+		}
 	}
-	
+		
 }
 
 //Entregado
