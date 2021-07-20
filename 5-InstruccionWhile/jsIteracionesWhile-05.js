@@ -6,7 +6,17 @@ function mostrar()
 	var sexoIngresado;
 	sexoIngresado = prompt("ingrese f ó m .");
 
+	while (sexoIngresado=="f"||sexoIngresado=="m")
+	{
+		if (sexoIngresado == "f")
+		{
+			document.getElementById("txtIdSexo").value="Sexo ingresado: Femenino";
+			break;
+		} else 
+		{
+			document.getElementById("txtIdSexo").value="Sexo ingresado: Masculino";
+			break;
+		}
+	}
 
-
-	txtIdSexo.value=sexoIngresado;
 }//FIN DE LA FUNCIÓN

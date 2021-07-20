@@ -4,16 +4,35 @@ sumar los que son positivos y multiplicar los negativos.*/
 function mostrar()
 {
 	var contador;
-	var respuesta;
 	var sumaPositivos;
 	var multiplicacionNegativos;
+	var comenzar;
+	var numero;
+
 	contador=0;
 	sumaPositivos=0;
 	multiplicacionNegativos=1;
-	respuesta='si';
 
+	comenzar=prompt("Quiere ingresar un número? Y (sí) o N (no)");
 
-	txtIdSuma.value=sumaPositivos;
-	txtIdProducto.value=multiplicacionNegativos;
+	while(comenzar=="Y")
+	{
+		numero=prompt("Ingrese el número");
+		numero=parseInt(numero);
+		contador=contador+1;
+
+		if (numero>0)
+		{
+			sumaPositivos=sumaPositivos+numero;
+		} else
+		{
+			multiplicacionNegativos=multiplicacionNegativos*numero;
+		}
+
+		comenzar=prompt("Quiere ingresar otro número? Y (sí) o N (no)");
+	}
+
+	document.getElementById("txtIdSuma").value=sumaPositivos;
+	document.getElementById("txtIdProducto").value=multiplicacionNegativos;
 
 }//FIN DE LA FUNCIÓN

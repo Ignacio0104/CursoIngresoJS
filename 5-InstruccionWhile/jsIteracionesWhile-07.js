@@ -6,13 +6,31 @@ function mostrar()
 {
 	var contador;
 	var acumulador;
-	var respuesta;
+	var continuar;
+	var promedio;
+	var numero;
+
+
 	contador=0;
 	acumulador=0;
-	respuesta='si';
+
+	continuar=prompt("Quiere ingresar un número? Y (sí) o N (no)");
 
 
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
+	while (continuar=="Y")
+	{
+		numero=prompt("Ingrese el número");
+		numero=parseInt(numero);
+		contador=contador+1;
+		acumulador=acumulador+numero;
+		continuar=prompt("Quiere ingresar otra número? Y (sí) o N (no)");
+	}
+
+	document.getElementById("txtIdSuma").value=acumulador;
+
+	promedio=acumulador/contador;
+
+	document.getElementById("txtIdPromedio").value=promedio;
+
 
 }//FIN DE LA FUNCIÓN

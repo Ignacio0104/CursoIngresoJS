@@ -5,5 +5,13 @@ function mostrar()
 {
 	var numeroIngresado;
 	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
+	numeroIngresado=parseInt(numeroIngresado);
+
+
+	while (numeroIngresado<10 && numeroIngresado>-1) 
+	{
+		document.getElementById("txtIdNumero").value=numeroIngresado;
+		break;
+	}
 	
 }//FIN DE LA FUNCIÓN

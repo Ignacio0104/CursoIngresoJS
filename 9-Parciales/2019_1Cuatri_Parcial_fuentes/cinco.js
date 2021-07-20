@@ -27,7 +27,7 @@ function mostrar()
 
     continente=document.getElementById("Marca").value;
     cantidadDeDias=prompt ("Cuantos días desea viajar?");
-    metodoDePago=prompt("Elija método de pago (solo numero): 1. Débito - 2. MercadoPago - 3. Efectivo - 4. Otro");
+    metodoDePago=prompt("Elija método de pago (solo numero): Débito - MercadoPago - Efectivo - Otro");
     //Aca establecí que la opción sea un número para evitar posibles errores de tipeo al ingresar el método de pago.
     cantidadDeDias=parseInt(cantidadDeDias);
     descuento=1;
@@ -40,7 +40,7 @@ function mostrar()
 
             switch (metodoDePago) 
             {
-                case "1":
+                case "Débito":
                     descuento=0.40;
                     break;
 
@@ -52,8 +52,8 @@ function mostrar()
         case "África":
             switch (metodoDePago)
             {
-                case "2":
-                case "3": 
+                case "MercadoPago":
+                case "Efectivo": 
                     descuento=0.25;
                     break;
                 default:
@@ -64,14 +64,14 @@ function mostrar()
         case "Europa":
             switch (metodoDePago)
             {
-                case "1":
+                case "Débito":
                     descuento=0.65;
                     break;
-                case "2":
+                case "MercadoPago":
                     descuento=0.90;
                     break;
-                case "3":
-                case "4":
+                case "Efectivo":
+                case "Otro":
                     descuento=0.95;
                     break;
             }break;
