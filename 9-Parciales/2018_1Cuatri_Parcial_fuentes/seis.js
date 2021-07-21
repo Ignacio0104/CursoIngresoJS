@@ -10,6 +10,7 @@ Si es de noche y la hora es menor a 24 mostrar se debe agregar el mensaje : "a d
 function mostrar()
 {
     var hora;
+    var mensaje;
 
     hora=document.getElementById("laHora").value;
     hora=parseInt(hora);
@@ -22,7 +23,7 @@ function mostrar()
         case 9:
         case 10:
         case 11:
-            alert("Es de mañana");
+            mensaje="Es de mañana";
             break;
         case 12:
         case 13:
@@ -32,26 +33,27 @@ function mostrar()
         case 17:
         case 18:
         case 19:
-            alert("Es de tarde");
+            mensaje="Es de tarde";
             break;
         case 20:
         case 21:
         case 22:
         case 23:
-        case 24:
         case 1:
         case 2:
         case 3:
         case 4:
         case 5:
-            alert("Es de noche");
-            if (hora<24)
-            {
-                alert("A dormir");
-            }
+            mensaje="Es de noche, a dormir";
+            break;
+        case 24:
+            mensaje="Es de noche";
             break;
         default:
-            alert("Dato ingresado inválido")
+            mensaje="Dato ingresado inválido";
+            break;
     }
+
+    alert(mensaje);
 
 }

@@ -5,7 +5,8 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 
 
-Ejercicio son switch
+Ejercicio son switct
+*/
 
 var eleccionMaquina;
 
@@ -31,7 +32,8 @@ function piedra()
             alert("Elegiste piedra y la máquina eligió tijera. Ganaste!!");
             break;
     }
-
+    eleccionMaquina=Math.random()*3+1;
+    eleccionMaquina=parseInt(eleccionMaquina);
 }
 function papel()
 {
@@ -48,6 +50,8 @@ function papel()
             alert("Elegiste papel y la máquina eligió tijera. Perdiste");
             break;
     }
+    eleccionMaquina=Math.random()*3+1;
+    eleccionMaquina=parseInt(eleccionMaquina);
 }
 function tijera()
 {
@@ -64,12 +68,16 @@ function tijera()
             alert("Elegiste tijera igual que la máquina, quedan empatados");
             break;
     }
+    eleccionMaquina=Math.random()*3+1;
+    eleccionMaquina=parseInt(eleccionMaquina);
 
 }
 
+/*
+
 Ejercicio con IF
 
-*/
+
 
 var eleccionMaquina;
 
@@ -144,3 +152,4 @@ function tijera()
     }
 
 }
+*/

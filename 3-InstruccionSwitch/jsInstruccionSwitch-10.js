@@ -1,4 +1,9 @@
 /*
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+
+Ejericio 10 SWITCH
+
 una agencia de viajes nos piden informar si hacemos viajes a lugares según la estación del año estemos, 
 
 informar si "Se viaja" o "No se viaja" a ese lugar
@@ -18,40 +23,52 @@ function mostrar()
 {
 	var estacion;
 	var destino;
+	var mensaje1;
+	var mensaje2;
 
 	estacion=document.getElementById("txtIdEstacion").value;
 	destino=document.getElementById("txtIdDestino").value;
+	mensaje1="Se viaja";
+	mensaje2="No se viaja";
 
 	switch (estacion) {
 		case "Invierno":
-			if (destino==="Bariloche") 
+			switch (destino)
 			{
-				alert("Se viaja");
-			}else {
-				alert("No se viaja");
-			}
-			break;
-			
+				case "Bariloche":
+					alert(mensaje1);
+					break;
+				default:
+					alert(mensaje2);
+					break;
+
+			}break;
+
 		case "Verano":
-			if (destino==="Cataratas" || destino==="Mar del plata")
+			switch (destino)
 			{
-				alert("Se viaja");
-			}else {
-				alert("No se viaja");
-			}
-			break;
-			
+				case "Cataratas":
+				case "Mar del plata":
+					alert(mensaje1);
+					break;
+				default:
+					alert(mensaje2);
+					break;
+			}break;
+	
 		case "Otoño":
-			alert("Se viaja");
+			alert(mensaje1);
 			break;
 
 		case "Primavera":
-			if (destino==="Bariloche")
+			switch (destino)
 			{
-				alert("No se viaja");
-			}else {
-				alert("Se viaja")
-			}
-			break;
+				case "Bariloche":
+					alert(mensaje2);
+					break;
+				default:
+					alert(mensaje1);
+					break;
+			}break;
 	}	
 }//FIN DE LA FUNCIÓN

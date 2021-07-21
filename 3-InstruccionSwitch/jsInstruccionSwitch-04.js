@@ -1,8 +1,14 @@
 /*
-al seleccionar un mes informar.
-si tiene 28 días.
-si tiene 30 días.
-si tiene 31 días.
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+
+Ejercicio 04 Switch
+
+	al seleccionar un mes informar.
+	si tiene 28 días.
+	si tiene 30 días.
+	si tiene 31 días.
+
 */
 
 function mostrar()
@@ -30,6 +36,5 @@ function mostrar()
 		case "Noviembre":
 			alert("Tiene 30 días");
 			break;
-		
 	}
 }//FIN DE LA FUNCIÓN

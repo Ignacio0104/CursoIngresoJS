@@ -58,4 +58,5 @@ function Responder()
         alert("Error");
     }
 
-}//FIN DE LA FUNCIÓN
+    comenzar()
+}

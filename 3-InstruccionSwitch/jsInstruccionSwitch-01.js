@@ -1,8 +1,15 @@
-/*al seleccionar un mes informar.
-si es Enero: "que comiences bien el año!!!."
-si es Marzo: "a clases!!!."
-si es Julio: "se vienen las vacaciones!!!."
-si es Diciembre: "Felices fiesta!!!."
+/*
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+
+Ejercicio 01 Switch
+
+	al seleccionar un mes informar.
+	si es Enero: "que comiences bien el año!!!."
+	si es Marzo: "a clases!!!."
+	si es Julio: "se vienen las vacaciones!!!."
+	si es Diciembre: "Felices fiesta!!!."
+	
 */
 
 function mostrar()
@@ -12,7 +19,8 @@ function mostrar()
 	mes=document.getElementById("txtIdMes").value;
 	
 
-	switch (mes) {
+	switch (mes) 
+	{
 		case "Enero":
 			alert ("Que comiences bien el año!!!");
 			break;
