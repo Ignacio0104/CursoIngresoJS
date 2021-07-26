@@ -1,6 +1,14 @@
 /*
-Al presionar el botón pedir  números  hasta que el usuario quiera,
-sumar los que son positivos y multiplicar los negativos.*/
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+Ejercicio 08
+
+Enunciado
+
+	Al presionar el botón pedir  números  hasta que el usuario quiera,
+	sumar los que son positivos y multiplicar los negativos.
+
+*/
 function mostrar()
 {
 	var contador;
@@ -11,7 +19,7 @@ function mostrar()
 
 	contador=0;
 	sumaPositivos=0;
-	multiplicacionNegativos=1;
+	multiplicacionNegativos=0;
 
 	comenzar=prompt("Quiere ingresar un número? Y (sí) o N (no)");
 
@@ -21,12 +29,22 @@ function mostrar()
 		numero=parseInt(numero);
 		contador=contador+1;
 
-		if (numero>0)
+		if(contador==1)
 		{
-			sumaPositivos=sumaPositivos+numero;
-		} else
+			multiplicacionNegativos=multiplicacionNegativos+1;
+		} else 
 		{
-			multiplicacionNegativos=multiplicacionNegativos*numero;
+			if (numero>0)
+			{
+				sumaPositivos=sumaPositivos+numero;
+			} else
+			{
+				if (numero<=-1)
+				{
+					multiplicacionNegativos=multiplicacionNegativos*numero;
+				}
+			}
+	
 		}
 
 		comenzar=prompt("Quiere ingresar otro número? Y (sí) o N (no)");
@@ -35,4 +53,4 @@ function mostrar()
 	document.getElementById("txtIdSuma").value=sumaPositivos;
 	document.getElementById("txtIdProducto").value=multiplicacionNegativos;
 
-}//FIN DE LA FUNCIÓN
+}

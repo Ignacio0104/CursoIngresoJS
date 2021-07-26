@@ -1,6 +1,13 @@
 /*
-Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
-e informar la suma acumulada y el promedio.
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+Ejercicio 07
+
+Enunciado
+
+	Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
+	e informar la suma acumulada y el promedio.
+
 */
 function mostrar()
 {
@@ -26,10 +33,9 @@ function mostrar()
 		continuar=prompt("Quiere ingresar otra número? Y (sí) o N (no)");
 	}
 
-	document.getElementById("txtIdSuma").value=acumulador;
-
 	promedio=acumulador/contador;
-
+	
+	document.getElementById("txtIdSuma").value=acumulador;
 	document.getElementById("txtIdPromedio").value=promedio;
 
 

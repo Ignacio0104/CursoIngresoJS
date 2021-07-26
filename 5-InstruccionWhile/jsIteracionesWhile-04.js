@@ -1,17 +1,27 @@
 /*
-al presionar el botón 
-pedir un número entre 0 y 9 inclusive.*/
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+
+Ejercicio 04
+
+Enunciado
+
+	al presionar el botón 
+	pedir un número entre 0 y 9 inclusive.
+
+*/
 function mostrar()
 {
 	var numeroIngresado;
-	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
+	numeroIngresado=prompt("ingrese un número entre 0 y 10.");
 	numeroIngresado=parseInt(numeroIngresado);
 
 
-	while (numeroIngresado<10 && numeroIngresado>-1) 
+	while(numeroIngresado>9||numeroIngresado<0) 
 	{
-		document.getElementById("txtIdNumero").value=numeroIngresado;
-		break;
+		alert("Error, número inválido")
+		numeroIngresado=prompt("ingrese un número entre 0 y 10.");
 	}
-	
-}//FIN DE LA FUNCIÓN
+	document.getElementById("txtIdNumero").value=numeroIngresado;
+
+}

@@ -1,22 +1,34 @@
 /*
-Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+AUTOR: Ignacio Smirlian
+E-mail: ignaciosmirlian@gmail.com
+
+Ejercicio 05
+
+Enunciado
+
+	Al presionar el botón pedir un sexo
+	'f' para femenino, 'm' para masculino.
+
+*/
 function mostrar()
 {
 	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	sexoIngresado=prompt("ingrese f ó m .");
 
-	while (sexoIngresado=="f"||sexoIngresado=="m")
+	while(sexoIngresado!="f"&&sexoIngresado!="m")
 	{
-		if (sexoIngresado == "f")
+		alert("Error, dato inválido");
+		sexoIngresado=prompt("ingrese f ó m .");
+	}
+
+	if (sexoIngresado=="f")
 		{
 			document.getElementById("txtIdSexo").value="Sexo ingresado: Femenino";
-			break;
+		
 		} else 
 		{
 			document.getElementById("txtIdSexo").value="Sexo ingresado: Masculino";
-			break;
+		
 		}
-	}
 
-}//FIN DE LA FUNCIÓN
+}
