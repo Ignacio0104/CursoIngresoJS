@@ -58,7 +58,7 @@ function NumerosImpares()
         
         numeroIngresado=numeroIngresado-1;
     }
-    alert(numerosImpares)
+    alert(numerosImpares);
 }
 
 function NumerosDivisibles() 
